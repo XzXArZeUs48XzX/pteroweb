@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard Rust Server</title>
+  <style>
+    body { font-family: sans-serif; margin: 0; padding: 0; background: #1e1e1e; color: #f0f0f0; }
+    header { background: #282828; padding: 1rem; text-align: center; }
+    section { padding: 1rem; }
+    h2 { border-bottom: 1px solid #444; padding-bottom: .5rem; }
+    table { width: 100%; border-collapse: collapse; margin-top: .5rem; }
+    th, td { border: 1px solid #444; padding: .5rem; text-align: left; }
+    th { background: #333; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🚀 Dashboard del Servidor Rust</h1>
+    <p>Información y configuración actual</p>
+  </header>
+
+  <section>
+    <h2>Información General</h2>
+    <ul>
+      <li><strong>Versión del mod RandomRaids:</strong> 1.9.4</li>
+      <li><strong>Discord Webhook:</strong> https://discord.com/api/webhooks/…</li>
+      <li><strong>Cooldown Raids por kills:</strong> 90 minutos</li>
+      <li><strong>Contador kills para raids:</strong> 30 (easy), 60 (medium), 100 (hard), 150 (expert), 170 (nightmare)</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Tipos de Raid</h2>
+    <table>
+      <thead>
+        <tr><th>Nivel</th><th>NPC/Wave</th><th>MLRS</th><th>Copter</th><th>Loot</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Easy</td><td>5 + 0</td><td>No</td><td>No</td><td>Tela</td></tr>
+        <tr><td>Medium</td><td>8 + 1</td><td>No</td><td>Sí</td><td>Eoka/Roadsign</td></tr>
+        <tr><td>Hard</td><td>12 + 2</td><td>Sí</td><td>Sí</td><td>AK/Metal</td></tr>
+        <tr><td>Expert</td><td>16 + 3</td><td>Sí</td><td>Sí</td><td>M249/Rocket</td></tr>
+        <tr><td>Nightmare</td><td>20 + 4</td><td>Sí</td><td>Sí</td><td>M249/Rocket+Armadura</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section>
+    <h2>Eventos Automatizados</h2>
+    <table>
+      <thead>
+        <tr><th>Evento</th><th>Intervalo (min)</th><th>Reinicio</th><th>Anuncio GUI</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Cargo Plane</td><td>240–300</td><td>Sí</td><td>Sí</td></tr>
+        <tr><td>Cargo Ship</td><td>240–300</td><td>Sí</td><td>Sí</td></tr>
+        <tr><td>Chinook</td><td>240–300</td><td>Sí</td><td>Sí</td></tr>
+        <tr><td>Patrol Helicopter</td><td>240–300</td><td>Sí</td><td>Sí</td></tr>
+        <tr><td>Bradley APC</td><td>240–300</td><td>Sí</td><td>Sí</td></tr>
+      </tbody>
+    </table>
+  </section>
+</body>
+</html>
